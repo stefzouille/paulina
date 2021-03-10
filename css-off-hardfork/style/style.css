@@ -1,0 +1,172 @@
+:root {
+  --yellow: #eef13f;
+  --orange: #fe6638;
+  --green: #80b238;
+  --blue: #80c1d6;
+}
+
+* {
+  box-sizing: border-box;
+  /*margin: 0;*/
+}
+
+body {
+  
+  background: var(--blue);
+  background-image: url("../img/blue-splash.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-family: Atma, sans-serif;
+  margin: 0;
+  font-size: 1.5rem;
+}
+nav ul {
+  background: var(--green);
+  opacity: 0.7;
+  margin: 0;
+  padding: 40px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+}
+
+ul li {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 650;
+  letter-spacing: 0.6rem;
+  }
+  
+ li a {
+  text-decoration: none;
+  color: white;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  color: var(--orange);
+  height: 110vh;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 150px;
+  margin-bottom: 0;
+}
+h1 + p {
+  font-size: 50px;
+  margin-top: 0;
+}
+
+
+h1,
+h2,
+h1 + p,
+button {
+  font-family: Bangers, sans-serif;
+  letter-spacing: 2px;
+}
+
+.obstacles {
+  display: flex;
+  height: 150vh;
+  background: var(--orange);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  padding-top: 100px 0;
+}
+h2 {
+  font-size: 100px;
+  text-align: center;
+}
+ .obstacles article {
+  background-color: var(--green);
+  border-radius: 20px;
+  width: 70vh;
+  text-align: center;
+}
+
+article a {
+  text-decoration: none;
+  color: white;
+}
+
+.prizes {
+  background-color: var(--green);
+  height: 250vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.prizes-group article {
+  flex: 1;
+  height: 60vh;
+  width: 60vh;
+  border: 5px dashed var(--yellow);
+  padding: auto;
+  margin: 40px 0;
+}
+
+.apply {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--blue);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  color: white;
+}
+label input {
+background-color: var(--orange);
+width: 350%;
+height: 45px;
+border-radius: 10px;
+border: none;
+color: white;
+}
+
+button {
+  margin-top: 15px;
+  background-color: var(--yellow);
+  border-radius: 5px;
+  border: none;
+  color: black;
+  height: 45px;
+}
+
+footer {
+  margin-top: 3rem;
+  height: 10vh;
+  background-color: yellow;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+::placeholder {
+  color: white;
+}
+
+@media (min-width: 640px) {
+}
