@@ -12,22 +12,30 @@
 </head>
 
 <body>
-  <nav>
-    <a href="index.html">Hipstrify.io</a>
-    <ul>
-      <li>
-        <a href="#">Home</a>
-      </li>
-      <li>
-        <a href="#why-us">About</a>
-      </li>
-      <li>
-        <a href="#team">Our Team</a>
-      </li>
-      <li>
-        <a href="#signup">Contact</a>
-      </li>
-    </ul>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class=" navbar-brand" href="index.html">Hipstrify.io</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-ul"
+        aria-controls="navbar-ul" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbar-ul">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#why-us">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#team">Our Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#signup">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
   <header class="cover text-white min-vh-100 d-flex">
@@ -127,24 +135,37 @@
       </div>
     </section>
   </main>
-  <section id="signup">
-    <h2>
-      Get our handcrafted newsletter
-    </h2>
-    <p>
-      Seriously, we'll send you real paper in the mail. We don't do email.
-    </p>
-    <form>
-      <input type="email" placeholder="Put your real address in here..." required />
-      <button type="submit">
-        Handcraft it
-      </button>
-    </form>
+  <section id="signup" class="py-5 text-center">
+    <div class="container">
+      <h2 class="mb-0 text-uppercase fw-bold">
+        Get our handcrafted newsletter
+      </h2>
+      <p class="lead">
+        Seriously, we'll send you real paper in the mail. We don't do email.
+      </p>
+      <div class="row">
+        <form class="col-lg-8 offset-lg-2">
+          <div class="input-group mb-3">
+            <input type="email" class="form-control" placeholder="Put your real address in here..." required />
+            <button type="submit" class="btn btn-success btn-lg">
+              Handcraft it
+            </button>
+        </form>
+      </div>
+    </div>
   </section>
 
-  <footer>
-    crafted with &hearts; in Paris
+  <footer class="bg-dark p-5 text-white text-center">
+    crafted with <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+      class="bi bi-suit-heart-fill text-danger" aria-label="love" role="img" viewBox="0 0 16 16">
+      <path
+        d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z" />
+    </svg> in Paris
   </footer>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
